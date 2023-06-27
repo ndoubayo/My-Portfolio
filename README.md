@@ -4,8 +4,11 @@ This repository is a portfolio personal project, developed using Html, CSS, java
 
 ## Installation
 
-Pour  ce projet vous devez installer Sass dans votre machine ou simplement dans le projet avec les dépendances puis l'executer depuis le fichier package.json
+For this project you must install Sass in your machine or simply in the project with the dependencies then execute it from the package.json file
 
 ```bash
   npm install sass -g ou npm install sass --save-dev
 ```
+
+## The index page image.
+![Page-index](https://github.com/ndoubayo/My-Portfolio/assets/115634872/b778f91e-35d7-4078-be45-f0061b62f802)
