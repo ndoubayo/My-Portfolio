@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400&family=Nunito:wght@200;400&family=Syne:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.mode{
+    background: #244548;
+    font-size: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    margin: 1.5rem auto;
+    place-items: center;
+    border-radius: 50%;
+    // @media (max-width: 768px) {
+    //     display: none;
+    // }
+}
+.mode .fa-solid{
+   color: #05c4a7;
+}
+
+.greetings{
+    background-color: #244548;
+    padding: .5rem;
+    border-radius: 40px;
+    color: #05c4a7;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    width: 90%;
+    @media (max-width: 768px) {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 1rem;
+    }
+}
+p{
+    margin: 0;
+}
