@@ -266,41 +266,39 @@ strong {
 #section1 .container {
   padding: 0;
 }
+#section1 .light-baner {
+  background: transparent;
+  height: 170px;
+}
+@media (max-width: 576px) {
+  #section1 .light-baner {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #section1 .light-baner {
+    height: 100px;
+  }
+}
+#section1 .dark-baner {
+  background-color: #244548;
+  height: 430px;
+}
+@media (max-width: 768px) {
+  #section1 .dark-baner {
+    height: 350px;
+  }
+}
+@media (max-width: 576px) {
+  #section1 .dark-baner {
+    height: 450px;
+  }
+}
 
 #section1 .principal-baner {
   height: 100%;
   inset: 0;
   position: absolute;
-}
-
-.light-baner {
-  background: transparent;
-  height: 170px;
-}
-@media (max-width: 576px) {
-  .light-baner {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .light-baner {
-    height: 100px;
-  }
-}
-
-.dark-baner {
-  background-color: #244548;
-  height: 430px;
-}
-@media (max-width: 768px) {
-  .dark-baner {
-    height: 350px;
-  }
-}
-@media (max-width: 576px) {
-  .dark-baner {
-    height: 450px;
-  }
 }
 
 .principal-baner {
@@ -509,6 +507,136 @@ strong {
 
 .button:hover .icon {
   top: 0;
+}
+
+#section2 {
+  gap: 3rem;
+}
+
+#section2 .skills-container {
+  background-color: #244548;
+  border-radius: 50px;
+  padding: 3rem;
+  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 768px) {
+  #section2 .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  #section2 .skills-container {
+    grid-template-columns: 1fr;
+    background-color: transparent;
+  }
+}
+#section2 .skills-container .skills-room {
+  background-color: #05c4a7;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-weight: 700;
+}
+@media (max-width: 992px) {
+  #section2 .skills-container .skills-room {
+    padding: 1rem;
+  }
+}
+
+.skills-room img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  box-shadow: 10px 15px 30px #244548;
+}
+
+.progress-container {
+  height: 10px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-color: #fafafa;
+}
+.progress-container .progress-skill {
+  height: 100%;
+  background-color: #244548;
+}
+
+.skill-0 {
+  width: 80%;
+}
+
+.skill-1 {
+  width: 70%;
+}
+
+.skill-2 {
+  width: 60%;
+}
+
+.skill-3 {
+  width: 85%;
+}
+
+.skill-4 {
+  width: 55%;
+}
+
+.skill-5 {
+  width: 65%;
+}
+
+.skill-6 {
+  width: 75%;
+}
+
+.skill-7 {
+  width: 75%;
+}
+
+.skill-8 {
+  width: 60%;
+}
+
+.skill-9 {
+  width: 80%;
+}
+
+#section3 {
+  position: relative;
+  height: 400px;
+}
+#section3 .light-baner {
+  background: transparent;
+  height: 100px;
+}
+@media (max-width: 576px) {
+  #section3 .light-baner {
+    display: none;
+  }
+}
+#section3 .dark-baner {
+  background-color: #244548;
+  height: 300px;
+}
+#section3 .baner-about-me {
+  position: absolute;
+  height: 100%;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fafafa;
+  font-size: 18px;
+}
+#section3 .baner-about-me img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

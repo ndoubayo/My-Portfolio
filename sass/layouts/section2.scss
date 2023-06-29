@@ -1,0 +1,85 @@
+@use"../utils/mixins";
+@use"../utils/variables.scss";
+
+#section2{
+    gap: 3rem;
+}
+
+#section2 .skills-container{
+    background-color: variables.$color-secondary;
+    border-radius: 50px;
+    padding: 3rem;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+        background-color:transparent;
+    }
+    .skills-room{
+        background-color: variables.$color-primary;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        font-weight: 700;
+        @media (max-width: 992px) {
+            padding: 1rem;
+        }
+    }
+}
+
+.skills-room img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    box-shadow: 10px 15px 30px variables.$color-secondary;
+}
+
+.progress-container{
+    height: 10px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: variables.$color-tertiary;
+    .progress-skill{
+        height: 100%;
+        background-color: variables.$color-secondary;
+    }
+}
+.skill-0{
+    width: 80%;
+}
+.skill-1{
+    width: 70%;
+}
+.skill-2{
+    width: 60%;
+}
+.skill-3{
+    width: 85%;
+}
+.skill-4{
+    width: 55%;
+}
+.skill-5{
+    width: 65%;
+}
+.skill-6{
+    width: 75%;
+}
+.skill-7{
+    width: 75%;
+}
+.skill-8{
+    width: 60%;
+}
+.skill-9{
+    width: 80%;
+}

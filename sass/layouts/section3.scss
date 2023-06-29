@@ -1,0 +1,48 @@
+@use"../utils/mixins";
+@use"../utils/variables.scss";
+
+#section3{
+    position: relative;
+    height: 400px;
+    // @media (max-width: 576px) {
+    //     margin-top: 7rem;
+    //     height: 300px;
+    // }
+    // @media (max-width: 768px) {
+    //     height: 450px;
+    // }
+    .light-baner{
+        background: transparent;
+        height: 100px;
+        @media (max-width: 576px) {
+            display: none;
+        }
+        // @media (max-width: 768px) {
+        //     height: 100px;
+        // }
+        
+    }
+    .dark-baner{
+        background-color: variables.$color-secondary;
+        height: 300px;
+        // @media (max-width: 768px) {
+        //     height: 350px;
+        // }
+        // @media (max-width: 576px) {
+        //     height: 450px;
+        // }
+    }
+    .baner-about-me{
+        position: absolute;
+        height: 100%;
+        inset: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: variables.$color-tertiary;
+        font-size: 18px;
+        img{
+            height: 100%;
+        }
+    }
+}

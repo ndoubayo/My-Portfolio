@@ -16,37 +16,38 @@
     .container{
         padding: 0;
     }
+    .light-baner{
+        background: transparent;
+        height: 170px;
+        @media (max-width: 576px) {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            height: 100px;
+        }
+        
+    }
+    .dark-baner{
+        background-color: variables.$color-secondary;
+        height: 430px;
+        @media (max-width: 768px) {
+            height: 350px;
+        }
+        @media (max-width: 576px) {
+            height: 450px;
+        }
+    }
 }
 #section1 .principal-baner{
     height: 100%;
     inset: 0;
     position: absolute;
+    
 }
 
-.light-baner{
-    background: transparent;
-    height: 170px;
-    @media (max-width: 576px) {
-        display: none;
-    }
-    @media (max-width: 768px) {
-        height: 100px;
-    }
-    
-}
-.dark-baner{
-    background-color: variables.$color-secondary;
-    height: 430px;
-    @media (max-width: 768px) {
-        height: 350px;
-    }
-    @media (max-width: 576px) {
-        height: 450px;
-    }
-}
+
 .principal-baner {
     position: relative;
-    
     .row-1{
         position: absolute;
         width: 100%;
