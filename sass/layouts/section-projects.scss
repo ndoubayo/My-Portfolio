@@ -1,0 +1,103 @@
+@use"../utils/mixins";
+@use"../utils/variables.scss";
+
+#projets-section{
+    .container{
+        background-color: variables.$color-primary;
+        padding: 2rem;
+    }
+}
+.projects-container{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // gap: 3rem;
+    .arrows{
+        background-color: variables.$color-secondary;
+        color: variables.$color-primary;
+        padding: 5px;
+        width: 3rem;
+        height: 3rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+    }
+}
+
+.slider{
+    @media (min-width: 768px){
+        width:500px;
+        height: 695px;
+        overflow: hidden;
+    }
+}
+#projects{
+    @media (min-width: 768px){
+        height: 100%;
+        width: calc(550px *3);
+        /* overflow: hidden; */
+        // box-shadow: 10px 10px 30px #244548;
+        border-radius: 25px;
+    }
+}
+.project{
+    @media (min-width: 768px){
+        height: 100%;
+        width:500px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: left;
+        // animation: glisse 5s infinite;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+}
+@keyframes glisse {
+    0%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-550px);
+    }
+    66%{
+        transform: translateX(-1100px);
+    }
+    
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+.projets-body{
+    @media (min-width: 768px){
+        height: 70%;
+        width: 100%;
+        // box-shadow: 10px 10px 30px variables.$color-secondary;
+    }
+    img{
+        @media (min-width: 768px){
+            height: 70%;
+            width: 100%;
+            border-radius: 25px 25px 0 0;
+        }
+    }
+    .project-description{
+        background-color: variables.$color-secondary;
+        color: variables.$color-tertiary;
+        padding: 1rem;
+        text-align: center;
+        @media (min-width: 768px){
+            height: 30%;
+        }
+    }
+}
+.project-skills{
+    height: 25%;
+    background-color: variables.$color-secondary;
+    border-radius: 0 0 25px 25px;
+}

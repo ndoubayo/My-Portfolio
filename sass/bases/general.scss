@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400&family=Nunito:wght@200;400&family=Syne:wght@400;500;600&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,9 @@ body {
 
 a {
     color: inherit;
+}
+p{
+    margin: 0;
 }
 
 .mode{
@@ -47,6 +51,25 @@ a {
         margin: 0 1rem;
     }
 }
-p{
-    margin: 0;
+
+
+.second-text-about-me{
+    text-align: center;
+    color: #244548;
+    margin-top: 3rem;
+    font-size: 18px;
+    @media (max-width: 576px){
+        font-size: 14px;
+        margin: 3rem;
+    }
+    span{
+        color: #3d8f06;
+    }
+    .acroch{
+        font-size: 24px;
+        text-decoration: underline;
+        @media (max-width: 576px){
+            font-size: 18px;
+        }
+    }
 }

@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/2ead7ccef9.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/Styles/style.css">
+    <link rel="stylesheet" href="./assets/Styles/style.css">
 </head>
 
 <body>
@@ -23,16 +23,16 @@
                 <div class="collapse navbar-collapse justify-content-center justify-content-md-end" id="navbarNav">
                     <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link" href="#johndoe">Qui suis-je ?</a>
+                            <a class="nav-link" href="#Franck">Qui suis-je ?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#expertise">Skills</a>
+                            <a class="nav-link" href="./pages/skills.html">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Projets</a>
+                            <a class="nav-link" href="./pages/projcts.html">Projets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">About Me</a>
+                            <a class="nav-link" href="#About">About Me</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -53,7 +53,7 @@
         <p><span class="hand">&#128075;</span>Bonjour et Bienvenu sur mon  PORTFOLIO</p>
     </div>
     <main>
-        <section id="section1">
+        <section id="section1" class="mb-3">
             <div class="light-baner">
 
             </div>
@@ -64,7 +64,7 @@
                 <div class="row-1 baner-children">
                     <div class=" baner-text">
                         <button class="btn" type="button">
-                            <strong>Qui suis-je ?</strong>
+                            <strong id="Franck">Qui suis-je ?</strong>
                             <div class="container-stars">
                                 <div class="stars"></div>
                             </div>
@@ -100,105 +100,91 @@
             </div>
         </section>
 
-        <section id="section2" class="d-flex align-items-center flex-column justify-content-center mt-5 gy-5">
-            <button class="btn" type="button">
-                <strong>Compétences</strong>
-                <div class="container-stars">
-                    <div class="stars"></div>
-                </div>
-        
-                <div class="glow">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
-            </button>
-            <div class="skills-container">
-                <div class="skills-room">
-                    <img src="./assets/images/logos/html.png" alt="">
-                    <div class="skill-name">HTML5 80%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-0"></div>
-                    </div>
-                </div>
-                <div class="skills-room">
-                    <img src="./assets/images/logos/css.png" alt="">
-                    <div class="skill-name">CSS3 70%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-1"></div>
-                    </div>
-                </div>
-                <div class="skills-room">
-                    <img src="./assets/images/logos/bootstrap.png" alt="">
-                    <div class="skill-name">BOOTSTRAP 50%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-2"></div>
-                    </div>
-                </div>
-                <div class="skills-room">
-                    <img src="./assets/images/logos/sass.png" alt="">
-                    <div class="skill-name">SASS 85%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-3"></div>
-                    </div>
-                </div>
-                <div class="skills-room">
-                    <img src="./assets/images/logos/seo.png" alt="">
-                    <div class="skill-name">SEO 55%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-4"></div>
-                    </div>
-                </div>
-                <div class="skills-room">
-                    <img src="./assets/images/logos/js.png" alt="">
-                    <div class="skill-name">JAVASCRIPT 65%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-5"></div>
-                    </div>
-                </div>
-                <div class="skills-room">
-                    <img src="./assets/images/logos/github.png" alt="">
-                    <div class="skill-name">GITHUB 75%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-6"></div>
-                    </div>
-                </div>
-                <div class="skills-room">
-                    <img src="./assets/images/logos/figma.png" alt="">
-                    <div class="skill-name">FIGMA 75%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-7"></div>
-                    </div>
-                </div>
-                <div class="skills-room">
-                    <img src="./assets/images/logos/ps.png" alt="">
-                    <div class="skill-name">PHOTOSHOP 60%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-8"></div>
-                    </div>
-                </div>
-                <div class="skills-room">
-                    <img src="./assets/images/logos/a-illustrator.png" alt="">
-                    <div class="skill-name">ADOBE ILLUSTRATOR 80%</div>
-                    <div class="progress-container">
-                        <div class="progress-skill skill-9"></div>
-                    </div>
-                </div>
+        <button class="btn m-auto" type="button">
+            <strong id="About">About Me</strong>
+            <div class="container-stars">
+                <div class="stars"></div>
             </div>
-        </section>
-        <section id="section3" class="mt-5">
+    
+            <div class="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </button>
+        <section id="section3">
             <div class="light-baner">
 
             </div>
             <div class="dark-baner">
 
             </div>
-            <div class="baner-about-me">
-                <img src="./assets/images/about1.png" alt="image de franklin portant un pull">
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error facere fugiat quis nam sint similique soluta, et sequi omnis perspiciatis, porro consequuntur. Reprehenderit facilis autem maxime harum ullam, nobis ex.</div>
+            <div class="container baner-about-me">
+                <img src="./assets/images/about1.png" class="img-about1" alt="image de franklin portant un pull">
+                <img src="./assets/images/about2.png" class="img-about2" alt="image arrondi de franklin portant un pull">
+                <div class="text-about-me">
+                    <p>Hi!!! Ravis de vous savoir sur ma page! <span>&#128515;</span></p>
+                    <p>Mon prénom c'est <span>Franklin,</span> J'ai 25ans et je vis à N'djamena, capital de la république du Tchad.</p>
+                    <p>Vous vous êtes pas trompez de page, vous êtes piles au bon endroit pour en savoir plus sur moi! &#128521;</p>
+                    <p>La curiosité est ma nature principale. C'est d'ailleurs ce qui m'a poussé à me reconvertir dans le développemnt WEB.</p>
+                    <p>En effet, après mon parcours de licence en sciences Bioligiques, j'ai decidé d'approfondir cette curiosité dans les nouvelles technologies que je trouve très passionnant depuis que je m'y suis engagé!</p>
+                    <p>Je suis donc une Formation en Développement web sur la platforme <span>OpenClassroom</span> par le biais d'une entreprise française: <span>Mes Opinions</span></p>
+                </div>
             </div>
-
+        </section>
+        <div class="second-text-about-me">
+            <p>Mon objectif principal est de me performer dans les technologies du <span>développemnt web</span> et du <span>design.</span></p>
+            <p>Grace à mon esprit de créativité j'espère aller plus loin en donnant le meilleur de moi-même.</p>
+            <p>Afin d'accroitre mes compétences, je suis ouvert à toute propositon, que ça soit pour un projet, un stage ou une alternance.</p>
+            <p><span class="acroch">Que mes compétences soient aux services de la nécessité!!!</span></p>
+        </div>
+        <section id="section4">
+            <div class="container" id="contact">
+                <div class="row">
+                    <div class="col indication">
+                        <div class="idea">Des idées de Projets ?</div>
+                        <div class="img-contact">
+                            <img src="./assets/images/cartoon-young-boy.jpg" class="w-100" alt="image version cartoon d'un jeune homme devant un ordinateur">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="contacts-container">
+                            <div class="info mb-3">Cont@ctez moi!</div>
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-decoration-none" data-bs-toggle="tooltip"
+                                       title="LinkedIn">
+                                       <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-decoration-none" data-bs-toggle="tooltip"
+                                       title="E-mail">
+                                       <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Facebook">
+                                        <i class="fa-brands fa-square-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Tel">
+                                        <i class="fa-solid fa-phone-flip"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <img src="./assets/images/logos/logo-F2N.png" alt="Logo illustrant mon nom complet">
+        <p>&copy;Franklin-2N</p>
+        <p>Portfolio construis sans template</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

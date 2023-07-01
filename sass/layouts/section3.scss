@@ -3,18 +3,21 @@
 
 #section3{
     position: relative;
-    height: 400px;
-    // @media (max-width: 576px) {
-    //     margin-top: 7rem;
-    //     height: 300px;
-    // }
+    height: 450px;
+    @media (max-width: 992px) {
+        margin-top: 5rem;
+    }
+    @media (max-width: 576px) {
+        height: 490px;
+        margin-top: 8rem;
+    }
     // @media (max-width: 768px) {
     //     height: 450px;
     // }
     .light-baner{
         background: transparent;
         height: 100px;
-        @media (max-width: 576px) {
+        @media (max-width: 768px) {
             display: none;
         }
         // @media (max-width: 768px) {
@@ -24,13 +27,13 @@
     }
     .dark-baner{
         background-color: variables.$color-secondary;
-        height: 300px;
+        height: 350px;
         // @media (max-width: 768px) {
         //     height: 350px;
         // }
-        // @media (max-width: 576px) {
-        //     height: 450px;
-        // }
+        @media (max-width: 768px) {
+            height: 100%;
+        }
     }
     .baner-about-me{
         position: absolute;
@@ -41,8 +44,39 @@
         align-items: center;
         color: variables.$color-tertiary;
         font-size: 18px;
-        img{
+        @media (max-width: 576px){
+            font-size: 14px;
+        }
+        .img-about1{
             height: 100%;
+            margin-right: 3rem;
+            @media (max-width: 992px){
+                margin-right:0;
+                display: none;
+            }
+        }
+        .img-about2{
+            position: absolute;
+            top: -75px;
+            left: 30%;
+            display: none;
+            border: 5px solid variables.$color-primary;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 3rem;
+            @media (max-width: 768px){
+                display: block;
+            }
+        }
+        .text-about-me{
+            margin-top: 7rem;
+            @media (max-width: 768px) {
+                margin: 5rem 0 0 0;
+            }
+            span{
+                color: variables.$color-primary;
+            }
         }
     }
 }
