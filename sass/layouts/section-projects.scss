@@ -4,15 +4,21 @@
 #projets-section{
     .container{
         background-color: variables.$color-primary;
-        padding: 2rem;
+        @media (min-width: 768px){
+            padding: 2rem;
+        }
     }
 }
 .projects-container{
+    display: grid;
+    place-items: center;
     padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // gap: 3rem;
+    @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
     .arrows{
         background-color: variables.$color-secondary;
         color: variables.$color-primary;
@@ -22,20 +28,42 @@
         display: grid;
         place-items: center;
         border-radius: 50%;
+        box-shadow: 0 5px 15px variables.$color-secondary;
+        transition: transform 400ms;
+        @media (max-width: 768px){
+           display: none;
+        }
+        &:hover{
+            background-color: transparent;
+            border: 3px solid variables.$color-secondary;
+            transform: scale(1.1), translateX(10px);
+            color: variables.$color-secondary;
+        }
+        &:active{
+            transform: translateX(10px);
+        }
     }
 }
 
 .slider{
     @media (min-width: 768px){
-        width:500px;
+        width:475px;
         height: 695px;
         overflow: hidden;
     }
 }
 #projects{
+    @media (max-width: 768px){
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     @media (min-width: 768px){
         height: 100%;
-        width: calc(550px *3);
+        width: calc(475px *3);
         /* overflow: hidden; */
         // box-shadow: 10px 10px 30px #244548;
         border-radius: 25px;
@@ -44,39 +72,59 @@
 .project{
     @media (min-width: 768px){
         height: 100%;
-        width:500px;
+        width:475px;
         border-radius: 25px;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: space-between;
         float: left;
         // animation: glisse 5s infinite;
+    }
+    @media (max-width: 768px){
+        width: 15rem;
     }
     a{
         text-decoration: none;
     }
     
 }
-@keyframes glisse {
-    0%{
-        transform: translateX(0);
-    }
-    33%{
-        transform: translateX(-550px);
-    }
-    66%{
-        transform: translateX(-1100px);
-    }
-    
-    100%{
-        transform: translateX(0);
-    }
-    
+.project.active{
+    display: flex;
 }
+
+.next{
+    animation: nextSlide 0.8s ease-in;
+}
+.prev{
+    animation: prevSlide 0.8s ease-out;
+}
+
+
+@keyframes nextSlide {
+    from {
+        transform: translateX(475px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes prevSlide {
+    from {
+        transform: translateX(-475px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 .projets-body{
+    @media (max-width: 768px){
+       width: 100%;
+    }
     @media (min-width: 768px){
         height: 70%;
         width: 100%;
+        font-size: 15px;
         // box-shadow: 10px 10px 30px variables.$color-secondary;
     }
     img{
@@ -85,19 +133,59 @@
             width: 100%;
             border-radius: 25px 25px 0 0;
         }
+        @media (max-width: 768px){
+            width: 100%;
+            height: 150px;
+            border-radius: 15px 15px 0 0;
+        }
     }
     .project-description{
         background-color: variables.$color-secondary;
         color: variables.$color-tertiary;
         padding: 1rem;
         text-align: center;
+        h1{
+            font-size: 20px;
+            color: variables.$color-primary;
+        }
         @media (min-width: 768px){
             height: 30%;
+        }
+        @media (max-width: 768px) {
+            border-radius: 0 0 15px 15px;
+            font-size: 12px;
         }
     }
 }
 .project-skills{
-    height: 25%;
-    background-color: variables.$color-secondary;
-    border-radius: 0 0 25px 25px;
+    @media (min-width: 768px) {
+        height: 25%;
+        background-color: variables.$color-secondary;
+        border-radius: 0 0 25px 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+
+    }
+    @media (max-width: 768px) {
+       display: none;
+    }
+    figure{
+        display: grid;
+        place-items: center;
+        gap: 1rem;
+        transform: translateX(1000px);
+        animation: nextSlide 0.8s 0.4s forwards;
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        h2{
+           font-size: 18px;
+           color: variables.$color-primary;
+           margin: 0;
+        }
+    }
 }
