@@ -487,8 +487,27 @@ strong {
   border-radius: 0.45em;
   font-family: "Arial";
   transition: background 0.3s;
+  animation: scale 0.8s 0.5s linear infinite;
+  transition: all 0.2s ease-in-out;
 }
 
+@keyframes scale {
+  0% {
+    box-shadow: 0 0 0px 0px #05c4a7;
+  }
+  25% {
+    box-shadow: 0 0 7.5px 1.25px #05c4a7;
+  }
+  50% {
+    box-shadow: 0 0 15px 2.5px #05c4a7;
+  }
+  75% {
+    box-shadow: 0 0 22.5px 3.75px #05c4a7;
+  }
+  100% {
+    box-shadow: 0 0 30px 5px #05c4a7;
+  }
+}
 .text {
   display: flex;
   top: 0;
@@ -724,6 +743,7 @@ strong {
 }
 #section3 .baner-about-me .text-about-me span {
   color: #05c4a7;
+  font-weight: 600;
 }
 
 #section4 {
