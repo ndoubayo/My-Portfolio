@@ -306,8 +306,11 @@ strong {
   }
 }
 #section1 .dark-baner {
-  background-color: #244548;
+  background-image: url(/assets/images/500.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 430px;
+  position: relative;
 }
 @media (max-width: 768px) {
   #section1 .dark-baner {
@@ -318,6 +321,14 @@ strong {
   #section1 .dark-baner {
     height: 450px;
   }
+}
+#section1 .dark-baner .bg-trans {
+  background-color: #244548;
+  opacity: 0.8;
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
 }
 
 #section1 .principal-baner {
@@ -428,7 +439,7 @@ strong {
 }
 @media (max-width: 576px) {
   .baner-text .presentation {
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 1rem;
   }
 }
@@ -488,7 +499,7 @@ strong {
   font-family: "Arial";
   transition: background 0.3s;
   animation: scale 0.8s 0.5s linear infinite;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @keyframes scale {
@@ -496,16 +507,16 @@ strong {
     box-shadow: 0 0 0px 0px #05c4a7;
   }
   25% {
-    box-shadow: 0 0 7.5px 1.25px #05c4a7;
-  }
-  50% {
     box-shadow: 0 0 15px 2.5px #05c4a7;
   }
+  50% {
+    box-shadow: 0 0 30px 5px #05c4a7;
+  }
   75% {
-    box-shadow: 0 0 22.5px 3.75px #05c4a7;
+    box-shadow: 0 0 15px 2.5px #05c4a7;
   }
   100% {
-    box-shadow: 0 0 30px 5px #05c4a7;
+    box-shadow: 0 0 0px 0px #05c4a7;
   }
 }
 .text {
@@ -580,17 +591,23 @@ strong {
 #section2 .skills-container .skills-room {
   background-color: #05c4a7;
   border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 3rem;
   font-weight: 700;
+  perspective: 1000px;
 }
 @media (max-width: 992px) {
   #section2 .skills-container .skills-room {
     padding: 1rem;
   }
+}
+#section2 .skills-container .skills-room .cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.15s ease-out;
 }
 
 .skills-room img {
@@ -684,13 +701,24 @@ strong {
   }
 }
 #section3 .dark-baner {
-  background-color: #244548;
+  background-image: url(/assets/images/500.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 350px;
+  position: relative;
 }
 @media (max-width: 768px) {
   #section3 .dark-baner {
     height: 100%;
   }
+}
+#section3 .dark-baner .bg-trans {
+  background-color: #244548;
+  opacity: 0.8;
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
 }
 #section3 .baner-about-me {
   position: absolute;
@@ -823,6 +851,20 @@ strong {
   color: #05c4a7;
 }
 
+.fa-icons:hover {
+  animation: icon 0.8s infinite;
+}
+
+@keyframes icon {
+  from {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  to {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+}
 #projets-section .container {
   background-color: #05c4a7;
 }
@@ -855,7 +897,7 @@ strong {
   place-items: center;
   border-radius: 50%;
   box-shadow: 0 5px 15px #244548;
-  transition: transform 400ms;
+  transition: transform 600ms;
 }
 @media (max-width: 768px) {
   .projects-container .arrows {

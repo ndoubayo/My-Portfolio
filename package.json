@@ -1,11 +1,27 @@
 {
   "name": "mon-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository is a portfolio personal project, developed using Html, CSS, javascript and SCSS languages",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./assets/Styles/style.css"
+    "sass": "sass --watch ./sass/main.scss:./assets/Styles/style.css",
+    "dev": "parcel index.html --open"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndoubayo/My-Portfolio.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ndoubayo/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/ndoubayo/My-Portfolio#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "three": "^0.154.0"
+  }
 }

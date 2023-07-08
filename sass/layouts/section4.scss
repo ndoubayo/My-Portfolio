@@ -68,3 +68,18 @@
         }
     }
 }
+
+.fa-icons:hover{
+    animation: icon 0.8s infinite;
+}
+
+@keyframes icon {
+    from{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    to{
+        opacity: 0.9;
+        transform: scale(1);
+    }
+}

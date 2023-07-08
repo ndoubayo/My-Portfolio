@@ -1,5 +1,5 @@
 // Mode d'affichage( jour ou nuit)
-console.log('Franck')
+
 //page index
 const bodyBackground = document.querySelector('body');
 const ctnrModeBg = document.querySelector('.mode')
@@ -9,7 +9,7 @@ const greetingsColor = document.querySelector('#greeting')
 const presentationColor = document.querySelector('.presentation')
 const nameInPresentationColor = document.querySelector('.name')
 const jobInPresentationColor = document.querySelectorAll('.job')/*** */
-const darkBgs = document.querySelectorAll('.dark-baner')/** */
+const darkBgs = document.querySelectorAll('.bg-trans')/** */
 const textBanerColor = document.querySelector('.baner-about-me')
 const spansInFirstTextcolor = document.querySelectorAll('.text-about-me span')/** */
 const downloadBtnBg = document.querySelector('.button')
@@ -18,15 +18,12 @@ const downlodBtnIconColor = document.querySelector('.icon')
 
 const secondTextAboutMeColor = document.querySelector('.second-text-about-me')
 const spansInSecondTextcolor = document.querySelectorAll('.second-text-about-me span')/** */
-const sectionContactBackground = document.querySelector('#section4')
+// const sectionContactBackground = document.querySelector('#section4')
 const indicationTextColor = document.querySelector('.indication')
 const indicationImageContainerbacground = document.querySelector('.img-contact')
 const contactZone = document.querySelector('#section4')
 const contactContainerColor = document.querySelector('.contacts-container')
-const listContactsColor = document.querySelector('.contacts-container .list-inline li a ')
-
-
-
+const listContactsColor = document.querySelectorAll('.contacts-container .list-inline li a ')
 
 
 const listToDarkColor =[
@@ -34,11 +31,10 @@ const listToDarkColor =[
     greetingsColor,
     presentationColor,
     nameInPresentationColor,
-
+    contactContainerColor,
     textBanerColor,
     indicationTextColor,
-    contactContainerColor,
-    listContactsColor
+    contactContainerColor
 ]
 const listToDarkBackground = [
     bodyBackground,
@@ -50,7 +46,8 @@ const allJobstoDark =[
     jobInPresentationColor
 ]
 const allColorToDark = [
-    spansInFirstTextcolor
+    spansInFirstTextcolor,
+    listContactsColor
 ]
 const allSpansSecond =[
     spansInSecondTextcolor
@@ -86,23 +83,16 @@ function backgroundToDark(){
 const listTolightColor = [
     downloadBtnTextColor,
     downlodBtnIconColor,
-    secondTextAboutMeColor,
-    indicationTextColor,
-    contactContainerColor
+    secondTextAboutMeColor
 ]
 const listTolightBackground = [
     greetingsBg,
-    ctnrModeBg
+    ctnrModeBg,
+    contactZone
 ]
-
 const allBgtolight =[
     darkBgs
 ]
-
-// const allSpansFirst =[
-//     spansInFirstTextcolor
-// ]
-
 
 function backgroundToLight(){
     for ( let background1 of listTolightBackground){
@@ -116,39 +106,13 @@ function backgroundToLight(){
     darkBgs.forEach(bg=>{
         bg.style.background = '#05c4a7'
     })
-
-
-        
-    // darkBgs.forEach(bg=>{
-    //     bg.style.background = '#05c4a7'
-    // })
-    // progressSkillBackground.forEach(prog=>{
-    //     prog.style.background = '#05c4a7'
-    // })
 }
-
 function fontsToLight(){
     for ( let font1 of listTolightColor){
         font1.style.color = '#05c4a7'
     }
-    // for( let fonts1 of allBgtolight){
-    //     fonts1.forEach(element =>{
-    //         element.style.color = '#05c4a7'
-    //     })
-    // }
+   
 }
-
-// function allSpansToDark (){
-//     spansInFirstTextcolor.forEach(span =>{
-//         span.style.color = '#152147'
-//     })
-// }
-// function allSpansToLight (){
-//     spansInFirstTextcolor.forEach(span2 =>{
-//         span2.style.color = '#faa25a'
-//     })
-// }
-
 
 function changeToDark(){
     backgroundToDark();
@@ -167,54 +131,29 @@ const modePermission = {
 }
 const permission = JSON.stringify(modePermission)
 
-
-moonBtn.addEventListener('click', (e)=>{
+moonBtn.addEventListener('click', (e) => {
     e.preventDefault()
     window.sessionStorage.setItem('mode-nuit', permission)
-    const getModeNuit = window.sessionStorage.getItem('mode-nuit')
-    console.log('mode nuit')
-    if (getModeNuit) {
-        moonBtn.style.display = 'none'
-        sunBtn.style.display = 'block';
-        sunBtn.style.color = '#244548'
-        changeToDark();
-        changeToLight();
-        // greetingsBg.style.background = '#05c4a7';
-        // bodyBackground.style.background = '#244548';
-        // ctnrModeBg.style.background = '#05c4a7';
-        // contactZone.style.background = '#05c4a7';
-        // indicationImageContainerbacground.style.background = '#244548';
-        // downloadBtnBg.style.background = '#244548';
-        // // skillsContainerBackground.style.background = '#05c4a7';
-        // darkBgs.forEach(bg=>{
-        //     bg.style.background = '#05c4a7'
-        // })
-    }
+    moonBtn.style.display = 'none';
+    sunBtn.style.display = 'block';
+    sunBtn.style.color = '#244548';
+    changeToDark();
+    changeToLight();
 })
+
+const getModeNuit = window.sessionStorage.getItem('mode-nuit')
+if (getModeNuit) {
+    moonBtn.style.display = 'none';
+    sunBtn.style.display = 'block';
+    sunBtn.style.color = '#244548';
+    changeToDark();
+    changeToLight();
+}
 sunBtn.addEventListener('click', (e)=>{
     e.preventDefault()
     window.sessionStorage.removeItem('mode-nuit')
-    console.log('mode jour')
+    moonBtn.style.display = 'block'
+    sunBtn.style.display = 'none';
+    location.reload(true)
 })
 
-
-
-
-
-
-// const headerBackground = document.querySelector(".navbar")
-// const navLinksBackground = document.querySelector('.navbar-nav li')
-// const modeBtnBackground = document.querySelector('.mode')
-// const modeBtnColor = document.querySelector('.mode .fa-solid')
-// const greetingsColor = document.querySelector('.greetings')
-// const greetingsBackground = document.querySelector('#greeting')
-// const presentationColor = document.querySelector('.presentation')
-// const nameInPresentation = document.querySelector('.name')
-// const jobInPresentation = document.querySelectorAll('.job')
-// const firstBanerBackground = document.querySelectorAll('.dark-baner')
-// const textBanerColor = document.querySelector('.baner-about-me')
-// const spansInFirstTextcolor = document.querySelectorAll('.text-about-me span')
-// const downlodBtnBackground = document.querySelector('.button')
-// const downlodBtnBackgroundHovered = document.querySelector('.button:hover')
-// const downlodBtnColor = document.querySelector('.button')
-// const downlodBtnIconColor = document.querySelector('.icon')

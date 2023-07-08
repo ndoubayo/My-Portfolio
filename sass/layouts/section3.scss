@@ -26,13 +26,24 @@
         
     }
     .dark-baner{
-        background-color: variables.$color-secondary;
+        background-image: url(/assets/images/500.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         height: 350px;
+        position: relative;
         // @media (max-width: 768px) {
         //     height: 350px;
         // }
         @media (max-width: 768px) {
             height: 100%;
+        }
+        .bg-trans{
+            background-color: variables.$color-secondary;
+            opacity: 0.8;
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
         }
     }
     .baner-about-me{
