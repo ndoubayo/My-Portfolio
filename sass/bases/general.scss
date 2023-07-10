@@ -50,6 +50,18 @@ p{
         font-weight: 500;
         margin: 0 1rem;
     }
+    .hand{
+        animation: salut 400ms infinite;
+    }
+    
+}
+@keyframes salut {
+    from {
+        transform: translateX(10px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
 
 

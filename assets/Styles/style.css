@@ -50,7 +50,18 @@ p {
     margin: 0 1rem;
   }
 }
+.greetings .hand {
+  animation: salut 400ms infinite;
+}
 
+@keyframes salut {
+  from {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
 .second-text-about-me {
   text-align: center;
   color: #244548;
