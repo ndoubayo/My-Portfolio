@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio || Franklin-2N</title>
+    <link rel="apple-touch-icon" tailles="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" tailles="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" tailles="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifeste" href="/favicon/site.webmanifeste">
     <script src="https://kit.fontawesome.com/2ead7ccef9.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -96,7 +100,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="big-img" src="assets/images/ptfolio4.png" alt="Image de Franklin sur une fauteille">
+                    <img class="big-img" src="assets/images/about.png" alt="Image de Franklin sur une fauteille">
                     <img class="rounded-img" src="assets/images/ptfolio4 - Copie1.png" alt="">
                 </div>
             </div>
@@ -126,7 +130,7 @@
                 <div class="text-about-me">
                     <p>Hi!!! Ravis de vous savoir sur ma page! <span>&#128515;</span></p>
                     <p>Mon prénom c'est <span>Franklin,</span> J'ai 25ans et je vis à N'djamena, capital de la république du Tchad.</p>
-                    <p>Vous vous êtes pas trompez de page, vous êtes piles au bon endroit pour en savoir plus sur moi! &#128521;</p>
+                    <p>Vous vous êtes pas trompez de page, vous êtes pile au bon endroit pour en savoir plus sur moi! &#128521;</p>
                     <p>La curiosité est ma nature principale. C'est d'ailleurs ce qui m'a poussé à me reconvertir dans le développemnt WEB.</p>
                     <p>En effet, après mon parcours de licence en sciences Bioligiques, j'ai decidé d'approfondir cette curiosité dans les nouvelles technologies que je trouve très passionnant depuis que je m'y suis engagé!</p>
                     <p>Je suis donc une Formation en Développement web sur la platforme <span>OpenClassroom</span> par le biais d'une entreprise française: <span>Mes Opinions</span></p>
@@ -136,6 +140,7 @@
         <div class="second-text-about-me">
             <p>Mon objectif principal est de me performer dans les technologies du <span>développemnt web</span> et du <span>design.</span></p>
             <p>Grace à mon esprit de créativité j'espère aller plus loin en donnant le meilleur de moi-même.</p>
+            <p>J'append  et je continuerai d'apprendre d'apprendre davantage!</p>
             <p>Afin d'accroitre mes compétences, je suis ouvert à toute propositon, que ça soit pour un projet, un stage ou une alternance.</p>
             <p><span class="acroch">Que mes compétences soient aux services de la nécessité!!!</span></p>
         </div>
@@ -152,29 +157,44 @@
                     <div class="col">
                         <div class="contacts-container">
                             <div class="info mb-3">Cont@ctez moi!</div>
+                            <div id="modal" aria-hidden="true" role="dialog" style="display: none;">
+                                <div class="btn-close-modal"><i class="fa-solid fa-xmark"></i></div>
+                                <div class="whatsapp">
+                                    <div class="title-cntct">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <span>WHATSAPP</span>
+                                    </div>
+                                    <p>+23560305759</p>
+                                </div>
+                                <div class="tel">
+                                    <div class="title-cntct">
+                                        <i class="fa-solid fa-mobile"></i>
+                                        <span>MOBILES</span>
+                                    </div>
+                                    <p>+23560305759 / +23598451340</p>
+                                </div>
+                            </div>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-decoration-none" data-bs-toggle="tooltip"
-                                       title="LinkedIn">
+                                    <a href="https://www.linkedin.com/in/franklin-n-doubayo-noudjihidi-778ab4278/" class="text-decoration-none" data-bs-toggle="tooltip"
+                                       title="LinkedIn" target="_blank">
                                        <i class="fa-brands fa-linkedin fa-icons"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-decoration-none" data-bs-toggle="tooltip"
-                                       title="E-mail">
+                                    <a href="mailto:ndoubayofranklin@gmail.com" class="text-decoration-none" data-bs-toggle="tooltip"
+                                       title="E-mail" target="_blank">
                                        <i class="fa-solid fa-envelope fa-icons"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Facebook">
-                                        <i class="fa-brands fa-square-facebook fa-icons "></i>
+                                    <a href="https://www.facebook.com/ndoubayonoudjihidi.franklin" class="text-decoration-none" data-bs-toggle="tooltip" title="Facebook" target="_blank">
+                                        <i class="fa-brands fa-square-facebook fa-icons"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Tel">
+                                    <a href="#modal" class="text-decoration-none" id="phone" data-bs-toggle="tooltip" title="Tel: +23560305759">
                                         <i class="fa-solid fa-phone-flip fa-icons"></i>
-                                    </a>
-                                </li>
                                     </a>
                                 </li>
                             </ul>
@@ -188,7 +208,7 @@
     <footer>
         <img src="./assets/images/logos/logo-F2N.png" alt="Logo illustrant mon nom complet">
         <p>&copy;Franklin-2N</p>
-        <p>Portfolio construis sans template</p>
+        <p>Portfolio construit sans Framework</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

@@ -157,3 +157,39 @@ sunBtn.addEventListener('click', (e)=>{
     location.reload(true)
 })
 
+//Telephone
+
+const modal =  document.querySelector('#modal');
+const phone = document.querySelector('#phone');
+const btnCloseModal =document.querySelector('.btn-close-modal')
+
+function openModal(){
+    modal.style.display = 'block';
+    modal.removeAttribute('aria-hidden');
+    modal.setAttribute('aria-moidal', true);
+    
+}
+
+function closeModal(){
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', true);
+    modal.removeAttribute('aria-moidal');
+}
+
+phone.addEventListener('click', openModal)
+
+btnCloseModal.addEventListener('click', closeModal)
+
+const contact =document.querySelector('#section4');
+contact.addEventListener('click', closeModal)
+
+const stope = document.querySelector('.contacts-container')
+stope.addEventListener('click', function(e){
+    e.stopPropagation()
+})
+
+window.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'|| e.key === 'Esc'){
+        closeModal(e)
+    }
+})

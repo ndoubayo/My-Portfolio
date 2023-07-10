@@ -35,6 +35,7 @@
         height: 100%;
         top: 1rem;
         left: -1rem;
+        box-shadow: 0 0 15px #333;
         @media (max-width: 576px){
             top: .5rem;
             left: -.5rem;
@@ -46,9 +47,64 @@
     color: variables.$color-primary;
     text-align: center;
     align-items: center;
-    // @media (max-width: 768px){
-    //     margin-top: 2rem;
-    // }
+    position: relative;
+    @media (max-width: 768px){
+       font-size: 15px;
+    }
+    #modal{
+        background-color: variables.$color-primary;
+        // opacity: 0.9;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        color: variables.$color-secondary;
+        border-radius: 15px;
+        padding: 1rem;
+        position: absolute;
+        @media (max-width: 768px){
+            padding: 0;
+         }
+        .btn-close-modal{
+            float: right;
+            width: 1em;
+            height: 1em;
+            padding: .5rem;
+            color: variables.$color-primary;
+            background-color: variables.$color-secondary ;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whatsapp, .tel{
+            // background-color: variables.$color-secondary ;
+            padding: .5rem;
+            border-radius: 10px;
+            color: variables.$color-secondary;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            @media (max-width: 768px){
+                gap: 0;
+             }
+            .title-cntct{
+            box-shadow: inset 20px 20px 60px #1f3b3d,
+                        inset -20px -20px 60px #294f53;
+                background-color: variables.$color-secondary;
+                border-radius: 25px;
+                padding: 0.5rem;
+                color: variables.$color-primary;
+                width: 60%;
+            }
+        }
+        .tel{
+            @media (max-width: 768px){
+                color: variables.$color-primary;
+            }
+        }
+    }
     .list-inline{
         display: grid;
         grid-template-columns: repeat(2, 1fr);

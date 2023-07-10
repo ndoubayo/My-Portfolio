@@ -367,7 +367,7 @@ strong {
 }
 .principal-baner .row-1 .big-img {
   height: 115%;
-  width: 25%;
+  width: 33%;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -825,6 +825,7 @@ strong {
   height: 100%;
   top: 1rem;
   left: -1rem;
+  box-shadow: 0 0 15px #333;
 }
 @media (max-width: 576px) {
   .img-contact img {
@@ -838,6 +839,66 @@ strong {
   color: #05c4a7;
   text-align: center;
   align-items: center;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .contacts-container {
+    font-size: 15px;
+  }
+}
+.contacts-container #modal {
+  background-color: #05c4a7;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: #244548;
+  border-radius: 15px;
+  padding: 1rem;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .contacts-container #modal {
+    padding: 0;
+  }
+}
+.contacts-container #modal .btn-close-modal {
+  float: right;
+  width: 1em;
+  height: 1em;
+  padding: 0.5rem;
+  color: #05c4a7;
+  background-color: #244548;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts-container #modal .whatsapp, .contacts-container #modal .tel {
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: #244548;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .contacts-container #modal .whatsapp, .contacts-container #modal .tel {
+    gap: 0;
+  }
+}
+.contacts-container #modal .whatsapp .title-cntct, .contacts-container #modal .tel .title-cntct {
+  box-shadow: inset 20px 20px 60px #1f3b3d, inset -20px -20px 60px #294f53;
+  background-color: #244548;
+  border-radius: 25px;
+  padding: 0.5rem;
+  color: #05c4a7;
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .contacts-container #modal .tel {
+    color: #05c4a7;
+  }
 }
 .contacts-container .list-inline {
   display: grid;
