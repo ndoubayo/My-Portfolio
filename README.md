@@ -11,4 +11,4 @@ For this project you must install Sass in your machine or simply in the project 
 ```
 
 ## The index page image.
-![Page-index](https://github.com/ndoubayo/My-Portfolio/assets/115634872/7d8bbf10-8417-4e4d-afaa-0cd27542193f)
+![Page-index](https://github.com/ndoubayo/My-Portfolio/assets/115634872/c4e3f4f3-20d2-452f-9424-c78eb70e776c)
