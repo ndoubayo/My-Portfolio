@@ -27,6 +27,7 @@ p {
   margin: 1.5rem auto;
   place-items: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .mode .fa-solid {
