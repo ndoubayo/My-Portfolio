@@ -178,37 +178,55 @@
         </section>
         
         <section id="section4">
-            <div class="container">
+            <div class="bg-trans"></div>
+            <div class="container" id="contact">
                 <div class="row">
                     <div class="col indication">
                         <div class="idea">Des idées de Projets ?</div>
                         <div class="img-contact">
-                            <img src="../assets/images/cartoon-young-boy.webp" class="w-100" alt="image version cartoon d'un jeune homme devant un ordinateur">
+                            <img src="./assets/images/cartoon-young-boy.webp" class="w-100" alt="image version cartoon d'un jeune homme devant un ordinateur">
                         </div>
                     </div>
                     <div class="col">
                         <div class="contacts-container">
                             <div class="info mb-3">Cont@ctez moi!</div>
+                            <div id="modal" aria-hidden="true" role="dialog" style="display: none;">
+                                <div class="btn-close-modal"><i class="fa-solid fa-xmark"></i></div>
+                                <div class="whatsapp">
+                                    <div class="title-cntct">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <span>WHATSAPP</span>
+                                    </div>
+                                    <p>+23560305759</p>
+                                </div>
+                                <div class="tel">
+                                    <div class="title-cntct">
+                                        <i class="fa-solid fa-mobile"></i>
+                                        <span>MOBILES</span>
+                                    </div>
+                                    <p>+23560305759 / +23598451340</p>
+                                </div>
+                            </div>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item">
                                     <a href="https://www.linkedin.com/in/franklin-n-doubayo-noudjihidi-778ab4278/" class="text-decoration-none" data-bs-toggle="tooltip"
-                                       title="LinkedIn">
+                                       title="LinkedIn" target="_blank">
                                        <i class="fa-brands fa-linkedin fa-icons"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="mailto:ndoubayofranklin@gmail.com" class="text-decoration-none" data-bs-toggle="tooltip"
-                                       title="E-mail">
+                                       title="E-mail" target="_blank">
                                        <i class="fa-solid fa-envelope fa-icons"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="https://www.facebook.com/ndoubayonoudjihidi.franklin" class="text-decoration-none" data-bs-toggle="tooltip" title="Facebook">
+                                    <a href="https://www.facebook.com/ndoubayonoudjihidi.franklin" class="text-decoration-none" data-bs-toggle="tooltip" title="Facebook" target="_blank">
                                         <i class="fa-brands fa-square-facebook fa-icons"></i>
                                     </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-decoration-none" data-bs-toggle="tooltip" title="Tel: +23560305759">
+                                    <a href="#modal" class="text-decoration-none" id="phone" data-bs-toggle="tooltip" title="Tel: +23560305759">
                                         <i class="fa-solid fa-phone-flip fa-icons"></i>
                                     </a>
                                 </li>
